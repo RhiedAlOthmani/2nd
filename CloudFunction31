@@ -1,0 +1,39 @@
+#
+#
+# main() will be run when you invoke this action
+#
+# @param Cloud Functions actions accept a single parameter, which must be a JSON object.
+#
+# @return The output of this action, which must be a JSON object.
+#
+#
+
+# importing the libraries
+import sys #to access system-specific parameters and functions
+import requests #to request the url
+import json #use a json format to get the data
+
+# the function parameters to connect the webhooks in the chatbot 
+def main(params):
+    url = "https://raw.githubusercontent.com/RhiedAlOthmani/2nd/master/motie-vragen.json" # the 'API'
+    items_to_display = ('Onderwerp', 'Datum') # select the keys to display
+    
+# retrieve max 3 items from API
+    row_count = 0 
+    return_str = ""
+    for item in json.loads(requests.get(url).content)['value']:
+        if item[params['type']] == params['text']: # type is the key and the text is defined in the chatbot environment
+            if row_count < 3: 
+                return_str += "<p>"
+                for display_item in items_to_display:
+                    return_str += f"{display_item}: {item[display_item]}<br />"
+                return_str += "</p><br />" # space between the items to make it look better
+                row_count += 1
+            else:
+                break
+    return {
+                'statusCode': 200,
+                'headers': { 'Content-Type': 'application/json'},
+                'body': {"message": return_str} # the items collected in the return_str are the message and will be desiplayed in the chatbot environment
+            }
+    
