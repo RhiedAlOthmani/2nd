@@ -5,7 +5,7 @@ increasing trust in Dutch parliament'. </h4>
 
 - Prototype training<br>
   All the intents and entiteits created to train the prototype<br>
-  File: https://github.com/RhiedAlOthmani/2nd/blob/master/skill-Covid%20(8).json
+  File: https://github.com/RhiedAlOthmani/2nd/blob/master/skill-Covid%20(10).json
 
 - Cleaning notebook<br>
   Created a notebook to clean the data extracted from the API<br>
