@@ -1,7 +1,7 @@
 # MA thesis project
 
 <h4>This repository contains of files used for cleaning and connecting the data for the MA project 'Chatbot design considerations for 
-increasing trust in Dutch parliament' </h4>
+increasing trust in Dutch parliament'. </h4>
 
 - Prototype training<br>
   All the intents and entiteits created to train the prototype<br>
