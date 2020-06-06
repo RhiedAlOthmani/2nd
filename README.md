@@ -9,7 +9,7 @@ increasing trust in Dutch parliament'. </h4>
 
 - Cleaning notebook<br>
   Created a notebook to clean the data extracted from the API<br>
-  File: https://github.com/RhiedAlOthmani/2nd/blob/master/Merging-JSON.ipynb
+  File: https://github.com/RhiedAlOthmani/2nd/blob/master/Cleaning-Notebook.ipynb
 
 - Cloud function to connect motions and bills<br>
   Created an IBM Cloud function to connect the JSON to the prototype<br>
