@@ -1,0 +1,35 @@
+#
+#
+# main() will be run when you invoke this action
+#
+# @param Cloud Functions actions accept a single parameter, which must be a JSON object.
+#
+# @return The output of this action, which must be a JSON object.
+#
+#importing the libraries
+import sys
+import requests
+import json
+
+def main(params):
+    return_str = ""
+    url = "https://raw.githubusercontent.com/RhiedAlOthmani/fml/master/leden-contact.json" #using the JSON as API
+    for item in json.loads(requests.get(url).content)['value']:
+        if params['text'] == item['Achternaam']: #getting the name
+            return_str += (f"{item['Voornamen']} {item['Tussenvoegsel']} {item['Achternaam']}\n") #creating the output
+            contact_list = []
+            for member in item['FractieZetelPersoon']:#searching for the name in the nested JSON
+                for info_list in member['Persoon']['PersoonContactinformatie']: #looking for contact info
+                    contact_detail = f'{info_list["Soort"]}: {info_list["Waarde"]}' #getting email and twitter
+                    if contact_detail not in contact_list:
+                        contact_list.append(contact_detail)
+            for contact in contact_list:
+                return_str += f"{contact}\n"
+
+            return {
+                'statusCode': 200,
+                'headers': { 'Content-Type': 'application/json'},
+                'body': {"message": return_str} #this is the outcome, displayed in the prototype
+            }
+
+    
