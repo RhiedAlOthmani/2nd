@@ -15,8 +15,8 @@ import json #use a json format to get the data
 
 # the function parameters to connect the webhooks in the chatbot 
 def main(params):
-    url = "https://raw.githubusercontent.com/RhiedAlOthmani/2nd/master/moties-bills-1.json" # the 'API'
-    items_to_display = ('Onderwerp', 'Thema','Status','Datum', 'Inhoud') # select the keys to display
+    url = "https://raw.githubusercontent.com/RhiedAlOthmani/2nd/master/moties-wetsvoorstellen.json" # the 'API'
+    items_to_display = ('Onderwerp', 'Thema','Status','Datum', 'Volgnummer') # select the keys to display
     
 # retrieve max 3 items from API
     row_count = 0 
