@@ -21,7 +21,7 @@ increasing trust in Dutch parliament'. </h4>
   File: https://github.com/RhiedAlOthmani/2nd/blob/master/CloudMembers
 
 - JSON files<br>
-  Cleaned version: https://github.com/RhiedAlOthmani/2nd/blob/master/moties-bills-1.json
+  Cleaned version: https://github.com/RhiedAlOthmani/2nd/blob/master/moties-wetsvoorstellen.json
   
  <br>
 
