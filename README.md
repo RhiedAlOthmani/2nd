@@ -4,11 +4,11 @@
 increasing trust in Dutch parliament' </h3>
 
 - Prototype training<br>
-  All the intents and entiteits created to train the prototype
-  File:
+  All the intents and entiteits created to train the prototype<br>
+  File: https://github.com/RhiedAlOthmani/2nd/blob/master/Merging-JSON.ipynb
 
 - Cleaning notebook<br>
-  Created a notebook to clean the data extracted from the API
+  Created a notebook to clean the data extracted from the API<br>
   File:
 
 - Cloud function to connect motions and bills<br>
