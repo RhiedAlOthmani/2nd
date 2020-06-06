@@ -17,7 +17,7 @@ increasing trust in Dutch parliament'. </h4>
 
 - Cloud function (attempt to connect members info)<br>
   Created an additional Cloud function to connect members information, extracted from the API, to the prototype<br>
-  This code works, however, it could not be connected because online one Cloud function can be connected to the prototype<br>
+  This code works, however, it could not be connected because only one Cloud function can be connected to the prototype<br>
   File: https://github.com/RhiedAlOthmani/2nd/blob/master/CloudMembers
 
 - JSON files<br>
