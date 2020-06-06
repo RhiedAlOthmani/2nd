@@ -6,3 +6,4 @@ increasing trust in Dutch parliament' </h3>
 - Cleaning notebook
 - Cloud function to connect motions and bills
 - Cloud function (attempt to connect members info)
+- JSON files
